@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REVCN Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>REVCN Token Dashboard</h1>
+    <button id="connect">Connect Wallet</button>
+    <p id="wallet">Wallet: Not connected</p>
+
+    <h2>Token Balances</h2>
+    <p id="balance">REVCN: --</p>
+
+    <h2>Swap</h2>
+    <input id="swapAmount" placeholder="Amount of REVCN to swap" />
+    <button onclick="swap()">Swap</button>
+
+    <h2>Send REVCN</h2>
+    <input id="recipient" placeholder="Recipient Address" />
+    <input id="sendAmount" placeholder="Amount of REVCN to send" />
+    <button onclick="sendToken()">Send</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
